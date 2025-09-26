@@ -143,6 +143,7 @@ header .lang {
   font-size: 4rem;
 }
 .about .sc-company .info .txt p {
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 
@@ -157,9 +158,10 @@ header .lang {
 .about .sc-logo .img img {
 }
 .about .sc-logo .txt {
-  max-width: 85rem;
+  max-width: 94rem;
   margin: 6rem auto 0;
   line-height: 1.6;
+  font-size: 1.8rem;
 }
 
 .about .sc-history {
@@ -167,7 +169,7 @@ header .lang {
 .about .sc-history .sc-title {
 }
 .about .sc-history .history-list {
-  max-width: 85rem;
+  max-width: 94rem;
   margin: 0 auto;
 }
 .about .sc-history .history-list li {
@@ -175,13 +177,14 @@ header .lang {
   line-height: 1.8;
 }
 .about .sc-history .history-list li > span {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 .about .sc-history .history-list li span em {
   font-weight: 900;
 }
 .about .sc-history .history-list li p {
   padding-left: 1.6rem;
+  font-size: 1.8rem;
   word-break: break-word;
 }
 .about .sc-history .history-list li p span {

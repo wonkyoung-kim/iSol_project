@@ -4,17 +4,283 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <title>iSol</title>
   </head>
-  <body>
+  <body class="home bg-black">
     <!-- header -->
-    <header></header>
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="./home.html">iSol</a>
+        </h1>
+        <button class="mo-btn">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="0"
+            viewBox="0 0 15 15"
+            height="24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
+              fill="currentColor"></path>
+          </svg>
+        </button>
+        <nav class="gnb">
+          <ul class="gnb-list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <span class="lang">KOR</span>
+      </div>
+    </header>
     <!-- //header -->
     <!-- main -->
-    <main></main>
+    <main>
+      <!-- <section class="sc-intro">
+        <div class="img">
+          <img
+            src="./assets/images/home/home_banner.png"
+            alt="BEYOND IMAGINATION" />
+        </div>
+        <div class="inner">
+          <div class="txt">
+            <h2 class="sc-title">
+              사람 중심의 가치를 기반으로!<br />
+              고객과 동반 성장을 최우선으로!
+            </h2>
+            <p class="desc">
+              AI 기술과 인간 중심 디자인을 융합한 혁신 제품 개발합니다. 사람의
+              삶을 더 편리하고 풍요롭게 하는 최고의 경험 제공하며, 틀을 깨는
+              창의적 아이디어로 세상에 없는 새 가치 창조합니다. 사회의 다양한
+              요구에 부응하고 인류의 지속적 발전에 기여하려 합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sc-feature">
+        <div class="inner">
+          <h2>
+            <em class="fc-main">iSol – AI:Robot</em> 특성화 기업<br />
+            “AI로 태어나고, 로봇으로 성장하며, 인간과 공존한다.”
+          </h2>
+          <ul class="feature-list">
+            <li>
+              <img src="" alt="끊임없는 도전" />
+              <div class="txt">
+                <strong>끊임없는 도전</strong>
+                <p>
+                  iSol은 AI 기술로 태동하였습니다. 2020 년에 설립된, 우리 회사는
+                  AI 기반 Machine Vision을 시작으로 AI 원천 기술을 축적하고
+                  Robot 개발에 많은 경험과 성과를 거두었습니다. 그러나 기술적
+                  가치만을 기준으로 삼지 않고 인간 친화적인 제품을 제작하고
+                  사람을 이롭게 하는 것이 목표입니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="" alt="사람에게 도움을 주기 위해 노력하는 기업" />
+              <div class="txt">
+                <strong
+                  >사람에게 도움을 주기 위해<br />
+                  노력하는 기업</strong
+                >
+                <p>
+                  iSol(아이솔) 프로젝트는 대부분 쉽지 않았습니다. 때로는 기술적
+                  난제를 해결해야 했고 때로는 다양한 이해적 불균형을 해소해야
+                  했습니다. 프로젝트의 해결은 기술만 있어서는 가능하지 않기
+                  때문에, 사람을 이해하고 사람과 소통하고 사람에게 맞춰져야
+                  한다고 믿습니다.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-service">
+        <div class="inner">
+          <ul class="service-list">
+            <li>
+              <div class="txt eng">
+                <span>BRIX METER</span>
+                <p>
+                  Nondestructive sugar content measurement refers to a method of
+                  determining the sweetness of fruits or other food products
+                  without causing any damage. Traditionally, measuring the sugar
+                  content of fruit required destructive analysis by sampling,
+                  but nondestructive methods allow for accurate measurement
+                  while preserving the fruit’s external and internal structure.
+                  Such nondestructive techniques are mainly used in agriculture
+                  and the food industry for quality control and product
+                  development.
+                </p>
+              </div>
+              <img src="" alt="" />
+              <div class="txt ko">
+                <strong><em class="fc-main">01</em>당도계</strong>
+                <p class="info">
+                  AI 기술은 제품을 손상하지 않고 필요한 검사를 할 수 있습니다.
+                  iSol의 비파괴 당도 측정은 과일 같은 식품의 당도를 표면의 손상
+                  없이 측정합니다.
+                </p>
+              </div>
+              <div class="swiper"></div>
+            </li>
+            <li>
+              <div class="txt eng">
+                <span>GLUCOSE METER</span>
+                <p>
+                  Up to now, blood glucose has mainly been measured either by
+                  pricking the finger or by attaching a patch containing a tiny
+                  needle to the skin. Finger-prick glucose meters are accurate,
+                  but many patients are reluctant to use them due to the pain of
+                  needle pricks. Minimally invasive continuous glucose monitors
+                  eliminate the pain of repeated pricking, but they require
+                  keeping a needle inserted in the body at all times, which can
+                  be inconvenient. iSol’s non-invasive glucose monitor offers a
+                  new method that allows diabetes patients, who need to measure
+                  their blood glucose several times a day, to do so without pain
+                  or discomfort.
+                </p>
+              </div>
+              <img src="" alt="" />
+              <div class="txt ko">
+                <strong><em class="fc-main">02</em>비침습 혈당 측정기</strong>
+                <p class="info">
+                  아이솔의 비침습 혈당 측정기는 매일 여러 차례 혈당을 측정해야
+                  하는 당뇨 환자들이 고통과 불편함을 수반하지 않고 혈당을 특정할
+                  수 있는 새로운 방법을 제시합니다.
+                </p>
+              </div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide fc-main">Slide 1</div>
+                  <div class="swiper-slide fc-main">Slide 2</div>
+                  <div class="swiper-slide fc-main">Slide 3</div>
+                  <div class="swiper-slide fc-main">Slide 4</div>
+                  <div class="swiper-slide fc-main">Slide 5</div>
+                  <div class="swiper-slide fc-main">Slide 6</div>
+                  <div class="swiper-slide fc-main">Slide 7</div>
+                  <div class="swiper-slide fc-main">Slide 8</div>
+                  <div class="swiper-slide fc-main">Slide 9</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="txt eng">
+                <span>CARE SERVICE ROBOT</span>
+                <p>
+                  A care service robot is a device that provides assistance to
+                  socially vulnerable groups such as the elderly and people with
+                  disabilities, contributing to an improved quality of life. It
+                  is mainly used in hospitals, homes, and nursing facilities,
+                  reminding users of medication times, alleviating loneliness
+                  through conversation functions, and enabling supplementary
+                  communication via video calls. In addition, it allows users to
+                  make emergency rescue requests by voice in case of sudden
+                  physical distress. In particular, iSol’s care service robot is
+                  integrated with a non-invasive blood glucose monitoring
+                  device, notifying users of testing times, recording the
+                  results, and tracking changes in blood glucose levels.
+                </p>
+              </div>
+              <img src="" alt="" />
+              <div class="txt ko">
+                <strong><em class="fc-main">03</em>돌봄 서비스 로봇</strong>
+                <p class="info">
+                  돌봄 서비스 로봇은 사회적 약자인 노인과 장애인에게 돌봄을
+                  제공해 삶의 질 향상에 기여하는 장치입니다.
+                </p>
+              </div>
+              <div class="swiper"></div>
+            </li>
+            <li>
+              <div class="txt eng">
+                <span>NURSING SERVICE ROBOT</span>
+                <p>
+                  A nursing service robot is designed to assist nurses in
+                  performing clinical tasks within hospitals. It primarily
+                  supports duties such as blood pressure measurement and IV
+                  fluid monitoring, while also helping patients who require
+                  substantial assistance with daily activities. Beyond that, it
+                  provides support for patients’ cognitive functions and
+                  emotional well-being. In particular, iSol’s nursing service
+                  robot is integrated with a non-invasive blood glucose
+                  monitoring device, enabling it to perform glucose tests. The
+                  data collected during these procedures can be continuously
+                  recorded by linking to the hospital’s medical system.
+                  Altogether, these capabilities automate nursing tasks,
+                  transforming hospital operations to be more accurate and
+                  efficient.
+                </p>
+              </div>
+              <img src="" alt="" />
+              <div class="txt ko">
+                <strong><em class="fc-main">04</em>간호 서비스 로봇</strong>
+                <p class="info">
+                  간호 서비스 로봇은 병원에서 간호사를 도와 간호업무를 수행할
+                  로봇입니다. 기본적으로 혈압검사, 수액량 체크 등의 업무를
+                  보조하고 절대적으로 도움이 필요한 환자의 일상생활을 돕고, 더
+                  나아가 환자의 인지기능 및 정서적 지지를 도와줍니다.
+                </p>
+              </div>
+              <div class="swiper"></div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+    </main>
     <!-- //main -->
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="inner">
+        <div class="info">
+          <span>iSol</span>
+          <address>대한민국</address>
+          <span>053-322-1251</span>
+          <span>info@isollab.com</span>
+        </div>
+      </div>
+    </footer>
     <!-- //footer -->
+    <!-- 상단으로 -->
+    <!-- <button><img src="" alt="상단으로" />상단으로</button> -->
+    <!-- //상단으로 -->
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        // direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
