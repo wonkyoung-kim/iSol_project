@@ -658,10 +658,13 @@ header .lang {
     max-width: 100%;
   }
   .about .sc-patent .patent-list {
-    gap: 6rem;
+    gap: 4rem;
   }
   .about .sc-patent .patent-list li {
     flex-basis: 100%;
+  }
+  .about .sc-award .award-list {
+    gap: 4rem;
   }
   .about .sc-award .award-list li {
     flex-basis: 100%;
