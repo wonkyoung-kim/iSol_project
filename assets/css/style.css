@@ -616,9 +616,6 @@ header .lang {
   .home .sc-service .service-list li .txt.ko .info {
     font-size: 1.8rem;
   }
-  .home .sc-service .service-list li .mySwiper {
-    margin-top: 3rem;
-  }
   .home .sc-service .service-list li .mySwiper .swiper-slide {
     max-width: 36rem;
   }
