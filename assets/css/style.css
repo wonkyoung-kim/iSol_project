@@ -66,14 +66,13 @@ header .lang {
 
 /* btn-top */
 .btn-top-wrap {
-  display: none;
   position: fixed;
   right: 2rem;
   bottom: 2rem;
   z-index: 10;
 }
 .btn-top {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 5rem;
@@ -618,7 +617,7 @@ header .lang {
     font-size: 1.8rem;
   }
   .home .sc-service .service-list li .mySwiper .swiper-slide {
-    max-width: 28rem;
+    max-width: 32rem;
   }
   .home .sc-service .service-list li .mySwiper .swiper-slide .tit {
     font-size: 2.4rem;
