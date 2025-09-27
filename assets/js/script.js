@@ -22,3 +22,25 @@ window.addEventListener("resize", () => {
     nav.style.maxHeight = 0; // 모바일에서는 기본 숨김
   }
 });
+
+const topBtn = document.querySelector(".btn-top");
+
+// 스크롤 위치에 따라 버튼 표시/숨김
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+// 버튼 클릭 시 최상단으로 이동
+topBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // 부드럽게 스크롤
+  });
+});

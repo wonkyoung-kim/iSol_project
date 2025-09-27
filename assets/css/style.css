@@ -64,6 +64,24 @@ header .lang {
 .footer .info address {
 }
 
+/* btn-top */
+.btn-top-wrap {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+}
+.btn-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
 /* home */
 .home .sc-banner {
 }
@@ -205,7 +223,7 @@ header .lang {
   overflow: visible;
 }
 .home .sc-service .service-list li .mySwiper .swiper-slide {
-  max-width: 30rem;
+  max-width: 34rem;
   width: 100%;
 }
 .home .sc-service .service-list li .mySwiper .swiper-slide .img {
@@ -492,9 +510,13 @@ header .lang {
   /* header */
   header .inner {
     justify-content: space-between;
+    padding-left: 0;
   }
   header .logo {
     order: 2;
+  }
+  header .logo a {
+    font-size: 2.8rem;
   }
   header .mo-btn {
     order: 1;
@@ -520,10 +542,12 @@ header .lang {
   header .gnb .gnb-list {
     flex-direction: column;
     gap: 0;
+    padding: 4rem 0;
   }
   header .gnb .gnb-list li a {
-    padding: 2rem 2.4rem;
     display: block;
+    padding: 2.8rem 3.2rem;
+    font-size: 3rem;
   }
   header .lang {
     order: 3;
@@ -531,6 +555,79 @@ header .lang {
   }
 
   /* home */
+  .home .sc-banner .banner .banner-img {
+    height: calc(100vh - 10rem);
+  }
+  .home .sc-banner .banner .banner-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .home .sc-banner .banner .banner-txt {
+    top: 5rem;
+    font-size: 14vw;
+  }
+  .home .sc-banner .banner .img-logo {
+    bottom: 5rem;
+    width: 47vw;
+  }
+  .home .sc-banner .sc-title {
+    font-size: 4rem;
+  }
+  .home .sc-banner .desc {
+    font-size: 2.2rem;
+  }
+  .home .sc-feature .sc-title {
+    margin-bottom: 8rem;
+    font-size: 4rem;
+  }
+  .home .sc-feature .feature-list {
+    max-width: 100%;
+  }
+  .home .sc-feature .feature-list li {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .home .sc-feature .feature-list li img {
+    width: 100%;
+  }
+  .home .sc-feature .feature-list li .txt {
+    width: 100%;
+  }
+  .home .sc-feature .feature-list li .txt strong {
+    font-size: 2.8rem;
+  }
+  .home .sc-feature .feature-list li .txt p {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .row {
+    max-width: 100%;
+  }
+  .home .sc-service .service-list li .txt.eng span {
+    margin-bottom: 2rem;
+    font-size: 10rem;
+  }
+  .home .sc-service .service-list li .txt.eng p {
+    font-size: 2.8vw;
+  }
+  .home .sc-service .service-list li .txt.ko strong {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
+  .home .sc-service .service-list li .txt.ko .info {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .mySwiper {
+    margin-top: 3rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide {
+    max-width: 36rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide .tit {
+    font-size: 2.4rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
+    font-size: 1.8rem;
+  }
 
   /* about */
   .about .sc-company .info {
