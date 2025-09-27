@@ -47,7 +47,7 @@ header .lang {
 }
 /* footer */
 .footer {
-  padding: 2.4rem 0 4.4rem;
+  padding: 6rem 0;
   color: #fff;
   background-color: #000;
 }
@@ -271,12 +271,14 @@ header .lang {
 .about .sc-banner .img span {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
+  opacity: 0.5;
   color: #fff;
   font-family: "Oswald";
   font-weight: 900;
   font-size: 8vw;
+  white-space: nowrap;
 }
 .about .sc-banner .txt {
   text-align: center;
@@ -627,6 +629,24 @@ header .lang {
   }
 
   /* about */
+  .about .sc-title {
+    font-size: 4.8rem;
+  }
+  .about .sc-banner .img {
+    height: 100vh;
+  }
+  .about .sc-banner .img span {
+    font-size: 17vw;
+  }
+  .about .sc-banner .txt h2 {
+    font-size: 4.7rem;
+  }
+  .about .sc-banner .txt h2 .mo {
+    display: block;
+  }
+  .about .sc-banner .txt p {
+    font-size: 2rem;
+  }
   .about .sc-company .info {
     flex-direction: column;
     align-items: center;
@@ -636,6 +656,9 @@ header .lang {
   }
   .about .sc-company .info .txt {
     max-width: 100%;
+  }
+  .about .sc-patent .patent-list {
+    gap: 6rem;
   }
   .about .sc-patent .patent-list li {
     flex-basis: 100%;

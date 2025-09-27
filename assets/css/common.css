@@ -39,7 +39,7 @@ section:not(:first-of-type) {
   html {
     font-size: 50%;
   }
-  br.mo {
+  br.mo-hidden {
     display: none;
   }
   .inner {
