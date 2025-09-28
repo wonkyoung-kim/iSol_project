@@ -181,7 +181,7 @@ header .lang {
 .home .sc-service .service-list li .txt.eng p {
   line-height: 1.6;
   font-size: 1.4vw;
-  color: #bbb;
+  color: #666;
 }
 .home .sc-service .service-list li > .img {
   max-width: 74%;
@@ -563,6 +563,12 @@ header .lang {
   .home .sc-service .service-list li .txt.eng {
     bottom: -7rem;
   }
+  .home .sc-service .service-list li:nth-child(2) .txt.eng {
+    bottom: -10rem;
+  }
+  .home .sc-service .service-list li:nth-child(3) .txt.eng {
+    bottom: -13rem;
+  }
   .home .sc-service .service-list li .txt.eng p {
     font-size: 2.2vw;
   }
@@ -572,6 +578,9 @@ header .lang {
   }
   .home .sc-service .service-list li .txt.ko .info {
     font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li:nth-child(4) .row {
+    margin: -7rem auto 0;
   }
   .home .sc-service .service-list li .mySwiper .swiper-slide {
     max-width: 32rem;
