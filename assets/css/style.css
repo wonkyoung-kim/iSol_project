@@ -434,7 +434,7 @@ header .lang {
 }
 
 /************** media query ***************/
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .home .sc-service .service-list li .mySwiper .swiper-slide {
     max-width: 32rem;
   }
@@ -578,6 +578,9 @@ header .lang {
   }
   .home .sc-service .service-list li .txt .info {
     font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .mySwiper {
+    margin-top: 6rem;
   }
 
   /* about */

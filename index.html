@@ -733,19 +733,16 @@
 
         new Swiper(swiperEl, {
           slidesPerView: "auto",
-          spaceBetween: 40,
+          spaceBetween: 20,
           navigation: {
             nextEl: nextBtn,
             prevEl: prevBtn,
             disabledClass: "btn-disabled",
           },
           breakpoints: {
-            720: {
-              // 태블릿 이상
-              slidesPerView: 2,
-            },
-            1024: {
+            900: {
               // 데스크탑
+              spaceBetween: 40,
               slidesPerView: 3,
             },
           },
