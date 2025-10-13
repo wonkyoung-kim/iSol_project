@@ -21,6 +21,7 @@ main {
   max-width: 144rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+  box-sizing: border-box;
 }
 
 section:not(:first-of-type) {
@@ -35,7 +36,7 @@ section:not(:first-of-type) {
   background-color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   html {
     font-size: 50%;
   }

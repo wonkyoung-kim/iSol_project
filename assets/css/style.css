@@ -91,6 +91,8 @@ header .lang {
   font-family: "oswald";
   font-weight: 900;
   font-size: 7.2vw;
+  color: #fff;
+  text-shadow: 0.2rem 0.1rem 0.8rem #000;
 }
 .home .sc-banner .banner .mo-txt-img {
   display: none;
@@ -109,6 +111,7 @@ header .lang {
   margin-bottom: 4rem;
   font-weight: 700;
   font-size: 6rem;
+  color: #fff;
 }
 .home .sc-banner .desc {
   font-weight: 500;
@@ -119,7 +122,7 @@ header .lang {
   margin-bottom: 14.4rem;
   text-align: center;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 5.8rem;
   color: #fff;
 }
 .home .sc-feature .feature-list {
@@ -158,62 +161,44 @@ header .lang {
 .home .sc-service .service-list li {
   margin-top: 6rem;
 }
-.home .sc-service .service-list li .row {
-  max-width: 74%;
-  margin: 0 auto;
-}
-.home .sc-service .service-list li .txt.eng {
-  position: relative;
-  right: 0;
-  bottom: -10rem;
-  z-index: -1;
-  text-align: right;
-}
-.home .sc-service .service-list li .txt.eng span {
-  display: block;
-  margin-bottom: 4rem;
-  line-height: 1;
-  font-family: "oswald";
-  font-weight: 700;
-  font-size: 16rem;
-  color: #fff;
-}
-.home .sc-service .service-list li .txt.eng p {
-  line-height: 1.6;
-  font-size: 1.4vw;
-  color: #666;
-}
 .home .sc-service .service-list li > .img {
-  max-width: 74%;
-  margin: 0 auto;
+  position: relative;
 }
-.home .sc-service .service-list li .txt.ko {
+.home .sc-service .service-list li > .img > .inner {
+  position: absolute;
+  left: 0;
+  bottom: 6rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home .sc-service .service-list li .txt {
   margin-top: 4rem;
+  text-shadow: 0.1rem 0.1rem 1.6rem #000;
 }
-.home .sc-service .service-list li .txt.ko strong {
+.home .sc-service .service-list li .txt strong {
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 4.4vw;
   color: #fff;
 }
-.home .sc-service .service-list li .txt.ko strong em {
+.home .sc-service .service-list li .txt strong em {
   display: block;
-  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.4vw;
 }
-.home .sc-service .service-list li .txt.ko .info {
-  font-weight: 700;
-  font-size: 2.4rem;
-  color: #888;
+.home .sc-service .service-list li .txt .info {
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #fff;
 }
 .home .sc-service .service-list li .mySwiper {
-  margin-top: 6rem;
+  margin-top: 12rem;
   padding-bottom: 8rem;
   overflow: visible;
-}
-.home .sc-service .service-list li .mySwiper .swiper-slide {
-  max-width: 34rem;
-  width: 100%;
 }
 .home .sc-service .service-list li .mySwiper .swiper-slide .img {
   width: 100%;
@@ -286,12 +271,6 @@ header .lang {
   display: flex;
   justify-content: center;
   gap: 6rem;
-}
-.about .sc-company .info .img {
-  max-width: 38rem;
-}
-.about .sc-company .info .txt {
-  max-width: 53rem;
 }
 .about .sc-company .info .txt strong {
   display: block;
@@ -454,7 +433,7 @@ header .lang {
 }
 
 /************** media query ***************/
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   /* header */
   header .inner {
     justify-content: space-between;
@@ -572,11 +551,14 @@ header .lang {
   .home .sc-service .service-list li .txt.eng p {
     font-size: 2.2vw;
   }
-  .home .sc-service .service-list li .txt.ko strong {
+  .home .sc-service .service-list li .txt strong {
     margin-bottom: 2rem;
     font-size: 4rem;
   }
-  .home .sc-service .service-list li .txt.ko .info {
+  .home .sc-service .service-list li .txt strong em {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .txt .info {
     font-size: 1.8rem;
   }
   .home .sc-service .service-list li:nth-child(4) .row {
@@ -590,6 +572,9 @@ header .lang {
   }
   .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
     font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .swiper-container {
+    position: relative;
   }
   .home .sc-service .service-list li .swiper-container .btn-prev,
   .home .sc-service .service-list li .swiper-container .btn-next {

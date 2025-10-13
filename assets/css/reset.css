@@ -160,7 +160,7 @@ textarea {
   font-family: "NanumSquareNeo";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   html {
     font-size: 50%;
   }
