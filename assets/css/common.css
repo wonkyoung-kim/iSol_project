@@ -35,7 +35,11 @@ section:not(:first-of-type) {
 .bg-black {
   background-color: #000;
 }
-
+@media (max-width: 1024px) {
+  html {
+    font-size: 53%;
+  }
+}
 @media (max-width: 720px) {
   html {
     font-size: 50%;

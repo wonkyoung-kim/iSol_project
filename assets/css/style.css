@@ -312,13 +312,14 @@ header .lang {
   font-weight: 900;
 }
 .about .sc-history .history-list li p {
-  padding-left: 1.6rem;
+  padding-left: 3rem;
   font-size: 1.8rem;
   word-break: break-word;
+  text-indent: -3rem;
 }
 .about .sc-history .history-list li p span {
   display: block;
-  padding-left: 2.4rem;
+  text-indent: 0;
 }
 .about .sc-patent .patent-list {
   display: flex;
@@ -433,6 +434,42 @@ header .lang {
 }
 
 /************** media query ***************/
+@media (max-width: 1024px) {
+  .home .sc-service .service-list li .mySwiper .swiper-slide {
+    max-width: 32rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide .tit {
+    font-size: 2.4rem;
+  }
+  .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
+    font-size: 1.8rem;
+  }
+  .home .sc-service .service-list li .swiper-container {
+    position: relative;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-prev,
+  .home .sc-service .service-list li .swiper-container .btn-next {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 4.4rem;
+    height: 4.4rem;
+    cursor: pointer;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-next {
+    bottom: 0;
+    right: 0;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-prev {
+    bottom: 0;
+    right: 7rem;
+  }
+  .home .sc-service .service-list li .swiper-container .btn-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+}
 @media (max-width: 720px) {
   /* header */
   header .inner {
@@ -532,25 +569,6 @@ header .lang {
   .home .sc-feature .feature-list li .txt p {
     font-size: 1.8rem;
   }
-  .home .sc-service .service-list li .row {
-    max-width: 100%;
-  }
-  .home .sc-service .service-list li .txt.eng span {
-    margin-bottom: 1rem;
-    font-size: 14vw;
-  }
-  .home .sc-service .service-list li .txt.eng {
-    bottom: -7rem;
-  }
-  .home .sc-service .service-list li:nth-child(2) .txt.eng {
-    bottom: -10rem;
-  }
-  .home .sc-service .service-list li:nth-child(3) .txt.eng {
-    bottom: -13rem;
-  }
-  .home .sc-service .service-list li .txt.eng p {
-    font-size: 2.2vw;
-  }
   .home .sc-service .service-list li .txt strong {
     margin-bottom: 2rem;
     font-size: 4rem;
@@ -560,43 +578,6 @@ header .lang {
   }
   .home .sc-service .service-list li .txt .info {
     font-size: 1.8rem;
-  }
-  .home .sc-service .service-list li:nth-child(4) .row {
-    margin: -7rem auto 0;
-  }
-  .home .sc-service .service-list li .mySwiper .swiper-slide {
-    max-width: 32rem;
-  }
-  .home .sc-service .service-list li .mySwiper .swiper-slide .tit {
-    font-size: 2.4rem;
-  }
-  .home .sc-service .service-list li .mySwiper .swiper-slide .desc {
-    font-size: 1.8rem;
-  }
-  .home .sc-service .service-list li .swiper-container {
-    position: relative;
-  }
-  .home .sc-service .service-list li .swiper-container .btn-prev,
-  .home .sc-service .service-list li .swiper-container .btn-next {
-    display: block;
-    position: absolute;
-    z-index: 5;
-    width: 4.4rem;
-    height: 4.4rem;
-    cursor: pointer;
-  }
-  .home .sc-service .service-list li .swiper-container .btn-next {
-    bottom: 0;
-    right: 0;
-  }
-  .home .sc-service .service-list li .swiper-container .btn-prev {
-    bottom: 0;
-    right: 7rem;
-  }
-  .home .sc-service .service-list li .swiper-container .btn-disabled {
-    opacity: 0.3;
-    pointer-events: none;
-    cursor: default;
   }
 
   /* about */

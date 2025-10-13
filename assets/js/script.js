@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     moBtn.addEventListener("click", () => {
-      if (window.innerWidth < 769) {
+      if (window.innerWidth < 721) {
         const isOpen = nav.style.transform === "translateX(0px)";
 
         nav.style.transform = isOpen ? "translateX(-100%)" : "translateX(0px)";
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 화면 크기 변경 시 nav 초기화
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 721) {
         nav.style.transform = "translateX(0px)";
         nav.style.maxHeight = "100%";
       } else {
