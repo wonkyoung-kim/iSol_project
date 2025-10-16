@@ -237,10 +237,8 @@ header .lang {
 }
 .about .sc-banner .img {
   position: relative;
-  z-index: -1;
 }
 .about .sc-banner .img img {
-  height: 100%;
   object-fit: cover;
 }
 .about .sc-banner .img span {
@@ -589,6 +587,9 @@ header .lang {
   }
   .about .sc-banner .img {
     height: 100vh;
+  }
+  .about .sc-banner .img img {
+    height: 100%;
   }
   .about .sc-banner .img span {
     font-size: 17vw;
