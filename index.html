@@ -724,29 +724,71 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
     <script>
-      AOS.init();
+      let isAOSRefreshing = false; // 잠금 상태 변수
+      let aosRefreshTimer = null;
 
-      document.querySelectorAll(".swiper-container").forEach((containerEl) => {
-        const swiperEl = containerEl.querySelector(".mySwiper");
-        const nextBtn = containerEl.querySelector(".btn-next");
-        const prevBtn = containerEl.querySelector(".btn-prev");
+      function safeAOSRefresh() {
+        if (isAOSRefreshing) return; // 이미 실행 중이면 무시
+        isAOSRefreshing = true;
 
-        new Swiper(swiperEl, {
-          slidesPerView: "auto",
-          spaceBetween: 20,
-          navigation: {
-            nextEl: nextBtn,
-            prevEl: prevBtn,
-            disabledClass: "btn-disabled",
-          },
-          breakpoints: {
-            900: {
-              // 데스크탑
-              spaceBetween: 40,
-              slidesPerView: 3,
-            },
-          },
+        // 강제 refreshHard + scroll 트리거
+        AOS.refreshHard();
+        window.scrollTo(window.scrollX, window.scrollY + 1);
+
+        setTimeout(() => {
+          isAOSRefreshing = false; // 일정 시간 후 잠금 해제
+        }, 800);
+      }
+
+      function initAOS() {
+        AOS.init({
+          duration: 1000,
+          once: false,
+          mirror: false,
+          offset: 120,
         });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initAOS();
+
+        document
+          .querySelectorAll(".swiper-container")
+          .forEach((containerEl) => {
+            const swiperEl = containerEl.querySelector(".mySwiper");
+            const nextBtn = containerEl.querySelector(".btn-next");
+            const prevBtn = containerEl.querySelector(".btn-prev");
+
+            new Swiper(swiperEl, {
+              slidesPerView: "auto",
+              spaceBetween: 20,
+              navigation: {
+                nextEl: nextBtn,
+                prevEl: prevBtn,
+                disabledClass: "btn-disabled",
+              },
+              breakpoints: {
+                900: {
+                  // 데스크탑
+                  spaceBetween: 40,
+                  slidesPerView: 3,
+                },
+              },
+            });
+          });
+      });
+
+      // Resize 시 안전하게 refresh (중복 방지 + 안정화)
+      window.addEventListener("resize", () => {
+        clearTimeout(aosRefreshTimer);
+        aosRefreshTimer = setTimeout(() => {
+          safeAOSRefresh();
+        }, 400);
+      });
+
+      // Orientation 변경 시도 마찬가지
+      window.addEventListener("orientationchange", () => {
+        safeAOSRefresh();
       });
     </script>
     <!-- //script -->
