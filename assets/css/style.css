@@ -360,7 +360,7 @@ header .lang {
 }
 .contact .info li {
   line-height: 1.8;
-  font-weight: 200;
+  font-weight: 400;
 }
 .contact .info .company {
   font-weight: 400;
@@ -389,7 +389,7 @@ header .lang {
 .contact .input-item label {
   display: block;
   margin-bottom: 0.8rem;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.8rem;
 }
 .contact .input-item input {
@@ -397,7 +397,7 @@ header .lang {
   width: 100%;
   box-sizing: border-box;
   padding: 1.6rem;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.6rem;
   background-color: #f3f4f6;
 }
