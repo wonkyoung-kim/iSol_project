@@ -33,64 +33,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- <style>
-      .popup {
-        display: none; /* 기본은 숨김 */
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        justify-content: center;
-        align-items: center;
-      }
-
-      .popup.active {
-        display: flex;
-      }
-
-      .popup-content {
-        position: relative;
-        background: #fff;
-        padding: 10px;
-        border-radius: 12px;
-        max-width: 90%;
-        max-height: 90%;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      }
-
-      .popup-content img {
-        display: block;
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 8px;
-      }
-
-      .popup-close {
-        position: absolute;
-        top: 8px;
-        right: 12px;
-        font-size: 28px;
-        background: none;
-        border: none;
-        color: #333;
-        cursor: pointer;
-      }
-
-      .popup-close:hover {
-        color: #000;
-      }
-
-      @media (max-width: 720px) {
-        .popup-content img {
-          width: 100%;
-        }
-      }
-    </style> -->
   </head>
   <body class="about">
     <!-- header -->
@@ -328,60 +270,34 @@
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="100">
-              <button class="btn-view">
-                <img
-                  src="./assets/images/about/img_patent1.png"
-                  alt="특허증1" />
-              </button>
+              <img src="./assets/images/about/img_patent1.png" alt="특허증1" />
             </li>
             <li
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="200">
-              <button class="btn-view">
-                <img
-                  src="./assets/images/about/img_patent2.png"
-                  alt="특허증2" />
-              </button>
+              <img src="./assets/images/about/img_patent2.png" alt="특허증2" />
             </li>
             <li
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300">
-              <button class="btn-view">
-                <img
-                  src="./assets/images/about/img_patent3.png"
-                  alt="특허증3" />
-              </button>
+              <img src="./assets/images/about/img_patent3.png" alt="특허증3" />
             </li>
             <li
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="400">
-              <button class="btn-view">
-                <img
-                  src="./assets/images/about/img_patent4.png"
-                  alt="특허증4" />
-              </button>
+              <img src="./assets/images/about/img_patent4.png" alt="특허증4" />
             </li>
             <li
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="500">
-              <button class="btn-view">
-                <img
-                  src="./assets/images/about/img_patent5.png"
-                  alt="특허증5" />
-              </button>
+              <img src="./assets/images/about/img_patent5.png" alt="특허증5" />
             </li>
           </ul>
         </div>
-        <!-- <div id="popup-layer" class="popup">
-          <div class="popup-content">
-            <button class="popup-close">&times;</button>
-            <img id="popup-image" src="" alt="특허 이미지 크게 보기" />
-          </div>
-        </div> -->
       </section>
       <section class="sc-award">
         <div class="inner">
@@ -432,30 +348,6 @@
 
     <script>
       AOS.init();
-
-      // document.querySelectorAll(".btn-view").forEach((btn) => {
-      //   btn.addEventListener("click", function () {
-      //     const img = this.querySelector("img");
-      //     const popupImg = document.getElementById("popup-image");
-      //     popupImg.src = img.src;
-      //     document.getElementById("popup-layer").classList.add("active");
-      //   });
-      // });
-
-      // document
-      //   .querySelector(".popup-close")
-      //   .addEventListener("click", function () {
-      //     document.getElementById("popup-layer").classList.remove("active");
-      //   });
-
-      // // 배경 클릭 시 닫기
-      // document
-      //   .getElementById("popup-layer")
-      //   .addEventListener("click", function (e) {
-      //     if (e.target === this) {
-      //       this.classList.remove("active");
-      //     }
-      //   });
     </script>
   </body>
 </html>
