@@ -34,7 +34,7 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <style>
+    <!-- <style>
       .popup {
         display: none; /* 기본은 숨김 */
         position: fixed;
@@ -90,7 +90,7 @@
           width: 100%;
         }
       }
-    </style>
+    </style> -->
   </head>
   <body class="about">
     <!-- header -->
@@ -376,12 +376,12 @@
             </li>
           </ul>
         </div>
-        <div id="popup-layer" class="popup">
+        <!-- <div id="popup-layer" class="popup">
           <div class="popup-content">
             <button class="popup-close">&times;</button>
             <img id="popup-image" src="" alt="특허 이미지 크게 보기" />
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="sc-award">
         <div class="inner">
@@ -433,29 +433,29 @@
     <script>
       AOS.init();
 
-      document.querySelectorAll(".btn-view").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          const img = this.querySelector("img");
-          const popupImg = document.getElementById("popup-image");
-          popupImg.src = img.src;
-          document.getElementById("popup-layer").classList.add("active");
-        });
-      });
+      // document.querySelectorAll(".btn-view").forEach((btn) => {
+      //   btn.addEventListener("click", function () {
+      //     const img = this.querySelector("img");
+      //     const popupImg = document.getElementById("popup-image");
+      //     popupImg.src = img.src;
+      //     document.getElementById("popup-layer").classList.add("active");
+      //   });
+      // });
 
-      document
-        .querySelector(".popup-close")
-        .addEventListener("click", function () {
-          document.getElementById("popup-layer").classList.remove("active");
-        });
+      // document
+      //   .querySelector(".popup-close")
+      //   .addEventListener("click", function () {
+      //     document.getElementById("popup-layer").classList.remove("active");
+      //   });
 
-      // 배경 클릭 시 닫기
-      document
-        .getElementById("popup-layer")
-        .addEventListener("click", function (e) {
-          if (e.target === this) {
-            this.classList.remove("active");
-          }
-        });
+      // // 배경 클릭 시 닫기
+      // document
+      //   .getElementById("popup-layer")
+      //   .addEventListener("click", function (e) {
+      //     if (e.target === this) {
+      //       this.classList.remove("active");
+      //     }
+      //   });
     </script>
   </body>
 </html>
