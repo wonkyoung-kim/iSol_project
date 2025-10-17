@@ -184,12 +184,6 @@ header .lang {
   font-size: 4.4vw;
   color: #fff;
 }
-.home .sc-service .service-list li .txt strong em {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  font-size: 1.4vw;
-}
 .home .sc-service .service-list li .txt .info {
   font-weight: 500;
   font-size: 1.4vw;
@@ -323,7 +317,7 @@ header .lang {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  max-width: 85rem;
+  max-width: 138rem;
   margin: 0 auto;
 }
 .about .sc-patent .patent-list li {
@@ -335,7 +329,7 @@ header .lang {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem;
-  max-width: 85rem;
+  max-width: 138rem;
   margin: 0 auto;
 }
 .about .sc-award .award-list li {
@@ -570,9 +564,6 @@ header .lang {
   .home .sc-service .service-list li .txt strong {
     margin-bottom: 2rem;
     font-size: 4rem;
-  }
-  .home .sc-service .service-list li .txt strong em {
-    font-size: 1.8rem;
   }
   .home .sc-service .service-list li .txt .info {
     font-size: 1.8rem;
